@@ -2,8 +2,8 @@
  * Bookshelf's forge() is a simple helper function to instantiate a new model without needing the new keyword. 
  */
 
-const knex = require('../config/db').knex;
-const City = require('../model/city');
+const knex = require('../../config/db').knex;
+const City = require('../../model/city');
 
 async function fetch_city() {
 

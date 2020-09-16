@@ -3,8 +3,8 @@
  * using any query parameters currently set on the model to form a select query. 
  */
 
-const knex = require('../config/db').knex;
-const City = require('../model/city');
+const knex = require('../../config/db').knex;
+const City = require('../../model/city');
 
 async function fetch_all() {
 

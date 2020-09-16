@@ -9,13 +9,13 @@ const logger = require('../../logger/logger');
 
 
 
-async function fetch_city() {
+async function update_city() {
 
     try {
 
-        let val = await City.where({ 'name': 'Bratislava' }).fetch({require:true});
-        // console.log(val.toJSON());
+        let val = await City.forge({name: 'New York'}).save({population: 8550001});
         logger.info(val);
+        
     } catch (e) {
 
         logger.info(`No data found ${e}`);
@@ -25,4 +25,4 @@ async function fetch_city() {
     }
 }
 
-fetch_city();
+update_city();

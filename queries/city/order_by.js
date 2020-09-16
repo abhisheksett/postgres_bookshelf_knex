@@ -3,8 +3,8 @@
  * The order parameter is optional and defaults to 'ASC'. 
  */
 
-const knex = require('../config/db').knex;
-const City = require('../model/city');
+const knex = require('../../config/db').knex;
+const City = require('../../model/city');
 
 async function fetch_city() {
 
