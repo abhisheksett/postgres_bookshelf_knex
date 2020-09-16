@@ -1,0 +1,19 @@
+{
+  "name": "postgres-practice",
+  "version": "1.0.0",
+  "description": "Sample Postgres application with knex and bookshelf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Abhishek Sett <aabhishek.sett@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.5",
+    "pg": "^8.3.3",
+    "winston": "^3.3.3"
+  }
+}
